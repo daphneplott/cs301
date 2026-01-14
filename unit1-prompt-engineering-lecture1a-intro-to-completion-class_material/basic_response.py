@@ -11,7 +11,7 @@ def main():
     model = 'gpt-4.1'
     response = client.responses.create(
         model=model,
-        input="Tell me about the doctrine in The Family: A Proclamation to the world.",
+        input="Are Thrass and Thrawn biologically related" ,
         #reasoning={'effort': 'low'}
     )
     print(f'Took {round(time() - start, 2)} seconds')
