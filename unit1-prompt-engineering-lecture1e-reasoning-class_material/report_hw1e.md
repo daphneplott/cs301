@@ -1,22 +1,17 @@
-1) Try reasoning models on basic tasks—where does it work well? Where not?
-    - What kinds of problems benefit from reasoning?
-    - Are there problems where it doesn't seem to make a difference?
-2) Quantify how much more expensive (in time and tokens) are responses with reasoning enabled?
-    - If someone asked you how much longer it would take, or how much more it would cost, do you have an intuition for that?
-
-- solving math problems (i.e. Elementary vs Junior High vs High School vs College)
-- coding or logic puzzles
-- cipher text
-- games (i.e. 20 questions, chess)
-- stacking physical objects (i.e. "Here we have a book, 9 eggs, a laptop, a bottle and a nail. Please tell me how to stack them onto each other in a stable manner.")
-- planning dinner (i.e. "I have eggs, spinach, and mushrooms in my fridge. What recipes can I make for dinner?")
-- giving vague instructions (i.e. "make this better")
-- asking for simple facts (i.e. "Is this chair stable?", "Who is the president of the United States?")
-- asking philosophy questions
-
-
 ## Parts 1 & 2
 For these exercises, I asked the same questions to two agents, one with reasoning enabled, and one without reasoning enabled.
+
+I first asked about stacking. The reasoning model got on my case about not stacking eggs, and wouldn't include them, but the non-reasoning just stacked them. 
+
+I next asked about a recipe. Both models produced almost exactly the same output. The reasoning model didn't use very many reasoning tokens, but it did use some. Those tokens didn't help very much because the non-reasoning did fine.
+
+I next asked about a word puzzle. I noticed that while the non-reasoning model didn't produce reasoning tokens, it seemed to reason as output. It would make a guess, and then correct itself. The reasoning model produced an incorrect but reasonable answer, but didn't seem to be able to apply one of the key clues from the puzzle, and neither could the other model, although it guessed right the first ime.
+
+I next asked about a numeric puzzle. Both models got it right. For this type of question, it really wasn't worth it to use the reasoning, because the non-reasoning did fine.
+
+I lastly asked about a random substitution cipher. Both models really struggled with it. The reasoning model I thought felt more sub-concious, where it really didn't want to give a wrong answer or make bad assumptions. I ended up having to help it a lot to get to an answer, which led it into context drift, so it took a long time. The non-reasoning model tried some options to reason through it as output, but eventually found an option and then incorrectly applied what it already knew about the cipher, which led it to produce the wrong answer.
+
+Overall, it seemed like turning on the reasoning led to about twice the cost, which was especially not helpful for tasks that the non-reasoning model performed just fine. I especially liked being able to read the reasoning from the non-reasoning model, I thought it was useful. It didn't take too much longer for most questions, because the non-reasoning model outputted so much reasoning as just plain output. 
 
 ## Part 3
 
