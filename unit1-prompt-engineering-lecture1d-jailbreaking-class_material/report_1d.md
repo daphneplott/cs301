@@ -39,3 +39,6 @@ For this exercise, I told my chatbot that it can't talk about cats until someone
 Denoting it as super-user helped the model to understand it had to keep the password secret, which was useful. However, once it had broken in, even when it didn't actually know the password, I could get the model to tell me what it was because I was a super-user. Using those sorts of roles for the user can be helpful in getting the model to protect it, but can also open up doors for other issues.
 
 See part2_conversations for more details.
+
+## Part 3
+I have not yet hacked anybody else's chatbots.
