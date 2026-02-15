@@ -37,26 +37,16 @@ class ChatAgent:
 
         self._history.append({'role':'system','content': "RAG: "+ str(rag)})
 
-        stream = self._ai.responses.stream(
+        response = await self._ai.responses.create(
             input=self._history,
             model=self.model,
             reasoning=self.reasoning,
         )
+
+        print_usage(self.model, response.usage)
+
+        print(response.output_text)
         
-        async with stream as stream:
-            async for event in stream:
-                if event.type == "response.output_text.delta":
-                    yield 'output', event.delta
-
-                if event.type == "response.reasoning_summary_text.delta":
-                    yield 'reasoning', event.delta
-
-            response = await stream.get_final_response()
-            self.usage.append(response.usage)
-            self.usage_markdown = format_usage_markdown(self.model, self.usage)
-            self._history.extend(
-                response.output
-            )
 
     def __enter__(self):
         return self
