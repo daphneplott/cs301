@@ -5,7 +5,7 @@ import argparse
 import asyncio
 from pathlib import Path
 
-from openai import AsyncOpenAI
+from openai import Client
 
 from usage import print_usage, format_usage_markdown
 
@@ -13,7 +13,7 @@ from chroma_demo import query_whole_documents
 
 class ChatAgent:
     def __init__(self, model: str, prompt: str, show_reasoning: bool, reasoning_effort: str | None):
-        self._ai = AsyncOpenAI()
+        self._ai = Client()
         self.model = model
         self.show_reasoning = show_reasoning
         self.reasoning = {}
@@ -30,20 +30,37 @@ class ChatAgent:
         if prompt:
             self._history.append({'role': 'system', 'content': prompt})
 
-    async def get_response(self, user_message: str):
+    def get_response(self, user_message: str):
         self._history.append({'role': 'user', 'content': user_message})
 
+        # pre_response = self._ai.responses.create(
+        #     input=[{'role':'system', 'content': Path('summary_prompt.md').read_text()},{'role':'user','content':user_message}],
+        #     model=self.model,
+        #     reasoning=self.reasoning,
+        # )
+
+        # self.usage.append(pre_response.usage)
+        # print("Summary: ", pre_response.output_text)
+        # print()
         rag = query_whole_documents('chroma','chroma_gc',user_message)
+
+        i = 1
+        for doc in rag:
+            print("Document: ", i)
+            i += 1
+            print(doc[:300])
+            print()
 
         self._history.append({'role':'system','content': "RAG: "+ str(rag)})
 
-        response = await self._ai.responses.create(
+        response = self._ai.responses.create(
             input=self._history,
             model=self.model,
             reasoning=self.reasoning,
         )
 
-        print_usage(self.model, response.usage)
+        self.usage.append(response.usage)
+
 
         print(response.output_text)
         
@@ -55,27 +72,12 @@ class ChatAgent:
         print_usage(self.model, self.usage)
 
 
-async def _main_console(agent_args):
+def _main_console(agent_args):
     with ChatAgent(**agent_args) as agent:
         
         message = input('User: ')
+        agent.get_response(message)
 
-        reasoning_complete = True
-        if agent.show_reasoning:
-            print(' Reasoning '.center(30, '-'))
-            reasoning_complete = False
-
-        async for text_type, text in agent.get_response(message):
-            if text_type == 'output' and not reasoning_complete:
-                print()
-                print('-' * 30)
-                print()
-                print('Agent: ')
-                reasoning_complete = True
-
-            print(text, end='', flush=True)
-            print()
-            print()
 
 def main(prompt_path: Path, model: str, show_reasoning, reasoning_effort: str | None, use_web: bool):
     agent_args = dict(
@@ -86,13 +88,13 @@ def main(prompt_path: Path, model: str, show_reasoning, reasoning_effort: str | 
 
     )
 
-    asyncio.run(_main_console(agent_args))
+    _main_console(agent_args)
 
 
 # Launch app
 if __name__ == "__main__":
     parser = argparse.ArgumentParser('ChatBot')
-    parser.add_argument('prompt_file', nargs='?', type=Path, default='system_prompt.md')
+    parser.add_argument('prompt_file', nargs='?', type=Path, default='system_prompt_with_rag.md')
     parser.add_argument('--web', action='store_true')
     parser.add_argument('--model', default='gpt-5-nano')
     parser.add_argument('--show-reasoning', action='store_true')

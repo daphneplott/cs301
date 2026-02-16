@@ -1,10 +1,5 @@
-Run ChromaDB (or other) locally
-Ingest latest General Conference text
-    Use download_gc_talks.py to get the text
-    Consider using ingest_folder in chroma_demo.py to ingest into your db
-Build chatbot that answers doctrinal questions using GC content
-    Consider using query_whole_documents from chroma_demo.py
-    Chat UX should expect one question per user input, with a single response (no back-and-forth on a topic)
-    Consider the system prompt—how will the agent know how to use the extra content?
+The first step was to build my Chat Bot. I used similar code from unit 1 to format my chatbot. As I created a response, I first added the user query into the chat history, then called the rag system, then added the rag results into the chat history, then called on the agent to create a response. 
 
-The first step was to build my Chat Bot. I used similar code from unit 1 to format my chatbot. As I created a response, I first added the user query into the chat history, then called the rag system, then added the rag results into the chat history. 
+My first system prompt told the agent it would be recieving additional information from a rag system, and to use that in creating the response. I told it to include citations as well, which I hoped would help it know to really only take information that was given to it. I also told it not to answer any unrelated questions, and to not expect any back-and-forth conversation from how the program was run. As I ran it a few times, I felt like this prompt worked fairly well, and it got good information from what the rag returned. A few times, it didn't quite respect the single response parameter, and would offer to do a next step in the response. To fix this, I included in my prompt instructions to check through what it was going to output, and not include any paragraphs beginning with "If you'd like", as this seemed to always be how it starts the paragraphs that prompt longer conversations. This worked the first two or three times, but stopped working for some reason. I think the way I'd fix this is to wrap it in python code that deletes those paragraphs.
+
+One thing I tried to look into was using another agent call to summarize the user input to get a better query. The agent did a good job with a base summary, but I couldn't get it to work the way I was invisioning. One thing I tried was to tell the summary agent that it should be in a religious context, hoping it would pull out root-cause ideas like patience or virtue, but that didn't work. The base input and the summary returned different talks, but I'm not sure which ones were more helpful. Maybe one way to deal with this is to run a RAG search on both the input itself, and a summary, and give both to the agent. The summary could help pick out the most important details, but maybe running the RAG on the whole input can encode some sort of deeper meaning and intention from the user.
