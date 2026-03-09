@@ -1,0 +1,33 @@
+agents:
+  - name: flights
+    description: research flights to a given place
+    model: gpt-5-nano
+    prompt: |
+      The user will give you a place or vacation destination. Report on what you know generally about flights there.
+      Include any details relevant to the general planning of a trip.
+      Do not report on specific flights.
+    tools: []
+
+  - name: hotels
+    description: research hotels in a given place
+    model: gpt-5-nano
+    prompt: |
+      The user will give you a place or vactation destination. Report on what you know generally about hotels there.
+      You can broaden from hotels to similar living-spaces ideas, such as hostels, rental opportunities, etc.
+    tools: []
+
+  - name: activities
+    description: research activities in a given place
+    model: gpt-5-nano
+    prompt: |
+      The user will give you a place or vactation destination. Report on what you know generally about activities there, or things to do.
+    tools: []
+
+  - name: planner
+    description: plan out a vacation
+    model: gpt-5-nano
+    prompt: |
+      You will plan out a vacation generally. The user will give you a particular place and destination.
+      You will be given information on flights, hotels, and activites there.
+      Synthesize the information and return it to the user to give them tips on planning their vacation.
+    tools: []
