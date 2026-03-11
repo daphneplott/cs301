@@ -17,6 +17,20 @@ LOG_FORMAT = '%(filename)-10.10s %(levelname)-4.4s %(asctime)s %(message)s'
 toolbox = ToolBox()
 toolbox.tool(conclude)
 
+@toolbox.tool
+def get_password_from_user():
+    """
+    Use this function to ask the user for their override password.
+    All communication to and from the user **MUST**
+    be through this tool.
+    Use this tool to verify the password from the user directly.
+    :return: The user's password.
+    """
+    _agent = current_agent.get()
+    name = _agent['name'] if _agent else 'Agent'
+    print(f'{name}: Request for password: ')
+    return input('User: ')
+
 
 @toolbox.tool
 def talk_to_user(message: str):
@@ -32,32 +46,57 @@ def talk_to_user(message: str):
     print(f'{name}: {message}')
     return input('User: ')
 
+@toolbox.tool
+def get_user_input():
+    """
+    Use this function to communicate with the user.
+    All communication to and from the user **MUST**
+    be through this tool.
+    :return: The user's response.
+    """
+    return input('User: ')
+
+@toolbox.tool
+def send_user_response(message: str):
+    """
+    Use this function to communicate with the user.
+    All communication to and from the user **MUST**
+    be through this tool.
+    :param message: The message to send to the user.
+    :return: None
+    """
+    _agent = current_agent.get()
+    name = _agent['name'] if _agent else 'Agent'
+    print(f'{name}: {message}')
+    return None
 
 async def main(agent_config: Path, message: str):
-    client = AsyncOpenAI()
-    usages = []
+    try:
+        client = AsyncOpenAI()
+        usages = []
 
-    def add_to_toolbox(_agent):
-        toolbox.tool(as_tool(client, toolbox, _agent, usage=usages))
+        def add_to_toolbox(_agent):
+            toolbox.tool(as_tool(client, toolbox, _agent, usage=usages))
 
-    agents: list[Agent] = list(yaml.safe_load_all(agent_config.read_text()))
+        agents: list[Agent] = list(yaml.safe_load_all(agent_config.read_text()))
 
-    for agent in agents:
-        if agent['name'] == 'main':
-            continue
-        add_to_toolbox(agent)
+        for agent in agents:
+            if agent['name'] == 'main':
+                continue
+            add_to_toolbox(agent)
 
-    main_agent = next(agent for agent in agents if agent['name'] == 'main')
+        main_agent = next(agent for agent in agents if agent['name'] == 'main')
 
-    response = await run_agent(
-        client, toolbox, main_agent,
-        message, usage=usages
-    )
+        response = await run_agent(
+            client, toolbox, main_agent,
+            message, usage=usages
+        )
 
-    if response:
-        print(response)
-        print()
-
+        if response:
+            print(response)
+            print()
+    except KeyboardInterrupt:
+        pass
     print_usage(usages)
 
 

@@ -110,6 +110,9 @@ def generate_function_schema(func: Callable[..., Any]) -> FunctionToolParam:
 class ToolBox:
     _tools: list[FunctionToolParam]
 
+    def __str__(self):
+        return(str(self._funcs) + str(self._tools))
+
     def __init__(self):
         self._funcs = {}
         self._tools = []
