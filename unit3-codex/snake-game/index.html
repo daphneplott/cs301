@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Classic Snake</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div class="title">Classic Snake</div>
+        <div class="scores">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="score">Best: <span id="best">0</span></div>
+        </div>
+      </header>
+
+      <section class="board">
+        <canvas id="game" width="600" height="600" aria-label="Snake game"></canvas>
+      </section>
+
+      <section class="controls">
+        <label class="control">
+          <span>Difficulty</span>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="normal" selected>Normal</option>
+            <option value="hard">Hard</option>
+          </select>
+        </label>
+
+        <button id="start" class="btn">Start / Restart</button>
+
+        <div class="status" id="status">Ready</div>
+      </section>
+
+      <footer class="help">
+        Controls: Arrow keys or WASD to move. Space to pause.
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

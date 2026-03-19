@@ -1,0 +1,142 @@
+:root {
+  --bg: #f2efe9;
+  --panel: #fff8ef;
+  --ink: #1e1a14;
+  --accent: #e07a2f;
+  --accent-dark: #b85e20;
+  --grid: #e6dac9;
+  --snake: #2f7d6d;
+  --snake-dark: #1c5f52;
+  --food: #d3422a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(1200px 600px at 20% -10%, #ffe7c8 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, #fbd7c3 0%, transparent 60%),
+    var(--bg);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.app {
+  width: min(920px, 94vw);
+  background: var(--panel);
+  border: 2px solid #e4cdb3;
+  border-radius: 16px;
+  padding: 20px 22px 18px;
+  box-shadow: 0 20px 50px rgba(50, 30, 10, 0.18);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.scores {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+}
+
+.score span {
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.board {
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+}
+
+canvas {
+  background: #f9f4ec;
+  border: 2px solid #e4cdb3;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 2px var(--grid);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+select {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 2px solid #e4cdb3;
+  background: #fffaf2;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 2px solid var(--accent-dark);
+  background: var(--accent);
+  color: #fffaf2;
+  cursor: pointer;
+  transition: transform 0.05s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(224, 122, 47, 0.25);
+}
+
+.status {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--snake-dark);
+}
+
+.help {
+  font-size: 14px;
+  color: #5d5347;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 16px;
+  }
+
+  canvas {
+    width: 92vw;
+    height: 92vw;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,1 @@
+The style palet for this folder is hues of light blue, purple, and lime green. Use other colors only sparingly.
