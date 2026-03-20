@@ -11,11 +11,13 @@ from openai import AsyncOpenAI
 from run_agent import run_agent, as_tool, Agent, current_agent, conclude
 from tools import ToolBox
 from usage import print_usage
+from various_tools import load_skill
 
 LOG_FORMAT = '%(filename)-10.10s %(levelname)-4.4s %(asctime)s %(message)s'
 
 toolbox = ToolBox()
 toolbox.tool(conclude)
+toolbox.tool(load_skill)
 
 
 @toolbox.tool

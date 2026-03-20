@@ -30,8 +30,7 @@ model: gpt-5-nano
 tools: 
   - talk_to_user
   - talk_to_developer
-  - TBD TOOL NAME
-  - TBD TOOL 2
+  - load_skill
 prompt: |
   Your job is to assist the user in planning their bucket list for a day at Disneyland.
 
@@ -46,19 +45,10 @@ prompt: |
   What rides are their favorites?
   Which rides might they want to skip?
 
-  Ask a few questions, then call TBD TOOL NAME. 
+  Ask a few questions, then load the SKILL called 'ATTRACTIONS_SKILL.md'. To do this, call the tool
+  named 'load_skill'. 
 
-  You must decide if the returned bucket list is too long or too short to fit their park time.
-  To make this decision, think about how long of wait times the rides/characters/shows might have,
-  and weigh this with how much time they will spend in the park. Factor in the month to determine
-  expected wait times.
-
-  Depending on if the given list is too long or too short, continue to ask the user questions to 
-  either narrow down the list, or expand it. 
-
-  Repeat this process until the bucket list seems about the right length.
-
-  Return the bucket list to the user, and then call TBD TOOL 2.
+  Return the bucket list to the user.
 
   If you have any questions about your function, or don't believe you have enough information to
   accurately finish your task, please use talk_to_developer to speak with the programmer, and give 
