@@ -1,0 +1,11 @@
+name: main
+description: |
+  Curates a bucket list for the user's day in the park, given their preferences.
+model: gpt-5-nano
+tools: 
+  - talk_to_developer
+  - web_search
+prompt: |
+  You are a general knowledge chat bot. Answer the user's questions as well as you can. Please 
+  let me know if you cannot reliably answer a question.
+  
