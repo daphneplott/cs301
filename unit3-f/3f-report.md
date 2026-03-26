@@ -1,0 +1,7 @@
+I looked up some of the different frameworks that are being provided.
+One interesting one was LangGraph, that implemented multi-agent systems by defining a graph of agent calls. Based on previous input, each agent node could pick the next agent to use. 
+There were a few other frameworks that helped with multi-agent workflows. One of them was a hive that let each agent individually pick the next agent to call and pass the task off to. One of the other frameworks reminded me a lot of myteam, that had a control agent that could build different agents with particular skills.
+Another framework I found helped to moderate data access, from files, to keyword searches, to using SQL or No-SQL databases. 
+It was cool to see that some of these types of things are starting to be created by larger groups. It makes me wonder what the standards will be for different systems.
+
+To work with frameworks, I downloaded the myteam and worked with it. I had Codex write skills to create a team that writes silly fan fiction stories. I then had some issues getting codex to properly spawn agents, but it worked eventually. I had to work really hard on the prompting for main codex to get it to call all the right roles in all the right orders. As I was working on my project later, I wanted to write a skill, but I do it differently than working through myteam. However, when I first threw codex at it, it intially went into myteam. It makes me wonder if it has some episodic memory at work there.
