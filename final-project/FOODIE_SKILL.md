@@ -15,14 +15,21 @@ Verified: March 25, 2026
 - Location: Disneyland Park, Main Street, U.S.A.
 - Type: Casual Dining
 - Food options:
-  - Breakfast Skillet - $20.00 - Three-cheese egg, breakfast potatoes, bacon, sausage, shredded cheese - full-meal
-  - Veggie Skillet - $20.00 - Three-cheese scrambled eggs, breakfast potatoes, onions, mushrooms, peppers, spinach - full-meal
-  - Breakfast Sandwich - $15.00 - Three-cheese egg, bacon, cheddar on brioche, breakfast potatoes - full-meal
-  - Walt's Chili Cheese Omelet - $19.00 - Cheese omelet topped with chili, cheese, chives, breakfast potatoes - full-meal
-  - Mickey-shaped Waffle - $17.00 - Waffle with bacon or sausage - full-meal
-  - Buttermilk Pancakes - $16.00 - Pancakes with bacon or sausage and seasonal compote - full-meal
-  - **Plant-Based** Overnight Oats - $9.00 - Fresh berries and bananas - smaller lunch
-  - **Kids** Silver Dollar Pancakes - $10.00 - Kids entree with two selections and milk or water - smaller lunch
+  - Fried Pickles - $11.00 - Hand-breaded pickles with house sauce - snack
+  - Walt's Chili - $12.00 - Hearty chili with cheese, sour cream, chives and cornbread crisps - full-meal
+  - Baked Potato Soup - $11.00 - Potato soup with bacon, cheddar, Monterey Jack, sour cream and chives - full-meal
+  - Parmesan Toasted Patty Melt - $24.00 - Angus chuck patty, Monterey Jack, grilled onions and house sauce on parmesan sourdough; choice of fruit or fries - full-meal
+  - Chef's Salad - $18.00 - Ham, chicken, bacon, cheddar, egg, tomato, cucumber, pickled onion, avocado, croutons and ranch - full-meal
+  - Turkey Club Sandwich - $19.00 - Turkey, bacon, tomato, Monterey Jack, lettuce, avocado mayo and lemon aioli on sourdough; choice of fruit or fries - full-meal
+  - Chicken Parmesan Pasta - $23.00 - Pasta with crispy chicken, Italian cheese blend, spinach and sun-dried tomato cream sauce - full-meal
+  - Fresh Catch of the Day - $26.00 - Fish with chef's selection of sides - full-meal
+  - **Plant-Based** Carnation Garden Salad - $9.00 - Lettuce, carrots, cucumber, radishes, fennel, tomatoes, croutons and green goddess dressing - full-meal
+  - **Plant-Based** Hearty Veggie Burger - $22.00 - House-made bean patty, tomato, chipotle mayo, slaw and crispy onions on artisan bun; served with fresh fruit - full-meal
+  - Peach Pie a la Mode - $10.00 - Warm peach pie with vanilla ice cream - dessert
+  - **Kids** Kids Grilled Cheese - $12.00 - Kids grilled cheese with two sides; choice of water or lowfat milk - smaller lunch
+  - **Kids** Hamburger Slider - $12.00 - Kids hamburger slider with two sides; choice of water or lowfat milk - smaller lunch
+  - **Kids** Mac & Cheese - $12.00 - Kids mac and cheese with two sides; choice of water or lowfat milk - smaller lunch
+  - **Kids** Chicken Tenders - $12.00 - Kids chicken tenders with two sides; choice of water or lowfat milk - smaller lunch
 
 ### Docking Bay 7 Food and Cargo
 - Location: Disneyland Park, Star Wars: Galaxy's Edge
@@ -54,13 +61,17 @@ Verified: March 25, 2026
 - Location: Disneyland Park, Tomorrowland
 - Type: Quick Service Restaurant
 - Food options:
-  - Chicken Tenders & Waffles - $14.49 - Chicken tenders, buttermilk waffles, fruit, maple cream sauce - full-meal
-  - American Breakfast Burrito - $11.99 - Egg, bacon, sausage, hash browns and cheese in a flour tortilla - full-meal
-  - **Plant-Based** Soy Chorizo Country Breakfast Burrito - $11.99 - Soy chorizo, spiced potatoes, peppers, onions, cheddar, pico, chipotle sauce - full-meal
-  - Pineapple Parfait - $7.29 - Pineapple sponge, caramel pineapple, pineapple mousse, vanilla chantilly - dessert
-  - **Kids** Chicken & Veggie Rice Bowl - $8.49 - Apricot-marinated chicken with rice and veggies - smaller lunch
-  - **Kids** Mini Meteor Pancake Kids Meal - $8.99 - Eggs, bacon, mini pancakes, seasonal fruit - smaller lunch
-  - Starlight Taro Tea - $8.29 - Butterfly pea tea with popping spheres and taro cream - drink
+  - The Tenderverse - $13.49 - Chicken tenders with choice of Cuties mandarin or fries - full-meal
+  - Cheeseburger Constellation - $14.79 - Beef patty with American cheese, lettuce, house burger sauce; choice of Cuties or fries - full-meal
+  - Galaxy Fish & Chips - $15.79 - Beer-battered fish, tavern fries and house-made tartar sauce - full-meal
+  - Grilled Chicken Chopped Salad - $14.79 - Mixed lettuce, grilled chicken, cucumber, tomato, onion, red pepper, feta, red pepper-ranch dressing - full-meal
+  - **Plant-Based** Chopped Salad - $11.99 - Mixed lettuce, cucumber, tomato, onion, red pepper, beans, parmesan, Italian dressing - full-meal
+  - Pineapple Parfait - $7.29 - Pineapple sponge, caramel pineapple, pineapple mousse, vanilla chantilly, brown sugar crumble - dessert
+  - Outshine Strawberry Fruit Bar - $5.99 - Strawberry fruit bar - dessert
+  - **Kids** Kids' Hamburger - $8.99 - Kids hamburger with applesauce and Cuties; choice of milk or water - smaller lunch
+  - **Kids** Chicken & Veggie Rice Bowl - $8.49 - Apricot-marinated chicken and roasted vegetables over rice; applesauce and Cuties; choice of milk or water - smaller lunch
+  - **Kids** Macaroni and Cheese - $8.49 - Kids mac and cheese with applesauce and Cuties; choice of milk or water - smaller lunch
+  - Starlight Taro Tea - $8.29 - Butterfly pea tea with blueberry popping spheres and taro cream - drink
 
 ### Gibson Girl Ice Cream Parlor
 - Location: Disneyland Park, Main Street, U.S.A.
@@ -124,13 +135,12 @@ Verified: March 25, 2026
 - Location: Disneyland Park, Main Street, U.S.A.
 - Type: Quick Service Restaurant
 - Food options:
-  - Egg, Pesto and Mozzarella Sandwich - $6.49 - Egg frittata with kale, pesto and mozzarella on cheddar-onion bun - full-meal
-  - **Plant-Based** Impossible Breakfast Sandwich - $6.29 - Plant-based breakfast sandwich - full-meal
-  - Double Smoked Bacon, Cheddar and Egg Sandwich - $6.49 - Bacon, cheddar and egg breakfast sandwich - full-meal
-  - Spinach, Feta & Egg White Wrap - $5.99 - Egg white wrap with spinach and feta - full-meal
-  - Coconut Yogurt Parfait (PB) - $6.79 - Coconut yogurt with berries and granola - smaller lunch
-  - Mickey Hat Cookie - $7.29 - Sweet dough cookie dipped in black chocolate - dessert
-  - Cinnamon Pull-Apart - $5.49 - Cinnamon pull-apart pastry - dessert
+  - Breakfast Sandwiches and Wraps - $6.49 - Egg sandwiches and wraps (varies) - full-meal
+  - Sous Vide Egg Bites - $5.49 - Egg bites (varies) - full-meal
+  - Bakery Treats - $5.29 - Muffins, croissants, loaves, cookies (varies) - dessert
+  - Coffee and Espresso Drinks - $5.99 - Brewed coffee, lattes, cold brew, Frappuccino (varies) - drink
+  - Packaged Snacks - $3.49 - Yogurt parfait, Uncrustables, bagels, applesauce (varies) - snack
+  - Bottled and Juice Drinks - $4.79 - Water, juice, soda (varies) - drink
 
 ### Maurice's Treats
 - Location: Disneyland Park, Fantasyland
@@ -181,12 +191,19 @@ Verified: March 25, 2026
 - Location: Disneyland Park, Fantasyland
 - Type: Fast Casual Dining
 - Food options:
-  - Breakfast Fantasyland Faire Fold - $12.99 - Tortilla with cheese, hash brown, egg, bacon and sausage - full-meal
-  - Bonjour! Breakfast - $9.49 - Scrambled eggs with hash brown, bacon and sausage - full-meal
-  - **Plant-Based** Little Town Harvest Bowl - $9.99 - Quinoa, roasted mushrooms and cauliflower over fries - full-meal
-  - **Kids** Mickey-shaped Pancake - $9.49 - Pancake with choice of bacon, sausage or fries - smaller lunch
-  - Black Cherry Taverne Cold Brew - $6.79 - Chocolate cold brew with black cherry topper - drink
-  - Hash Brown - $3.19 - Side hash brown - snack
+  - Gaston Burger - $18.29 - Beef patty, pastrami, cheese, pickles, sauteed onions and bell peppers; pepperoncini burger sauce; choice of Cuties or fries - full-meal
+  - Provincial Burger - $16.79 - Beef patty, cheese, burger sauce and pickles; choice of Cuties or fries - full-meal
+  - Chicken Fantasyland Faire Fold - $14.79 - Flour tortilla with chicken patty, hash brown, cheese and pickle aioli - full-meal
+  - Spicy Chicken Fantasyland Faire Fold - $14.79 - Tortilla with four-chile chicken patty, hash brown, cheese and pickle aioli - full-meal
+  - Cottage Salad - $14.79 - Romaine, hard-boiled eggs, bacon, marinated tomatoes, chicken, cucumbers, green goddess ranch - full-meal
+  - Petales de Pepperoni Flatbread - $10.49 - Pepperoni flatbread with classic pizzaiola sauce and mozzarella - full-meal
+  - Pizza au Fromage - $10.49 - Cheese flatbread - full-meal
+  - Les Tenders de Poulet - $13.49 - Chicken tenders with choice of Cuties or fries and dipping sauce - full-meal
+  - **Plant-Based** Little Town Harvest Bowl - $9.99 - Quinoa, roasted mushrooms and cauliflower over fries with spicy aioli - full-meal
+  - 70th Stuff - $7.29 - Shortbread cookie with cookies-and-cream cake, raspberries and white chocolate mousse - dessert
+  - **Kids** POWER Pack - $6.99 - Cuties, applesauce, carrots, whole-grain "fish" crackers; choice of small water or milk - snack
+  - **Kids** Hamburger - $8.99 - Kids hamburger with Cuties, applesauce; choice of small water or milk - smaller lunch
+  - **Kids** Mac & Cheese - $8.49 - Kids mac and cheese with Cuties and applesauce; choice of small water or milk - smaller lunch
 
 ### River Belle Terrace
 - Location: Disneyland Park, Frontierland
@@ -203,13 +220,12 @@ Verified: March 25, 2026
 - Location: Disneyland Park, Star Wars: Galaxy's Edge
 - Type: Cart/Kiosk
 - Food options:
-  - Ronto Morning Wrap - $13.99 - Scrambled eggs, grilled pork sausage, cheddar and peppercorn sauce in pita - full-meal
-  - **Plant-Based** Ronto-less Garden Wrap - $14.49 - Impossible sausage, kimchi slaw, pickled cucumber, gochujang in pita - full-meal
+  - Fried Falumpaset Cheese Skewer - $8.49 - Crispy potato with mustard-cheese dipping sauce - full-meal
+  - Ronto Wrap - $14.49 - Roasted pork, grilled pork sausage, peppercorn sauce and tangy slaw in pita - full-meal
+  - **Plant-Based** Ronto-less Garden Wrap - $14.49 - Impossible sausage, spicy kimchi slaw, sweet pickled cucumber, gochujang spread in pita - full-meal
   - Moof Juice - $7.79 - Fruit punch, orange with pineapple and chipotle-pineapple - drink
-  - Meiloorun Juice - $7.79 - Pineapple juice, lemonade and berry/citrus blend - drink
-  - Sap Tap Cup - $18.99 - Includes fountain beverage at time of purchase - drink
-  - Black Caf - $4.79 - Regular coffee - drink
-
+  - Meiloorun Juice - $7.79 - Pineapple juice, Minute Maid lemonade, blueberry/cranberry/lemon and desert pear - drink
+  
 ### Royal Street Veranda
 - Location: Disneyland Park, New Orleans Square
 - Type: Quick Service Restaurant

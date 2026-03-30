@@ -121,4 +121,5 @@ Major shows and parades (use if the user requests shows):
 - Disney California Adventure: World of Color
 
 If the user provides too few preferences, include a few classic/iconic picks so the list feels complete.
-Ensure the list matches the user's preferences and time available.
+Ensure the list matches the user's preferences and time available. In most cases, the attractions list should
+be at least 10 options. Do not underfill.
