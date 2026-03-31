@@ -1,0 +1,272 @@
+'Adventureland':
+  'Adventureland': 0
+  'Avengers Campus': 20
+  'Cars Land': 25
+  'Critter Country': 10
+  'Fantasyland': 10
+  'Frontierland': 5
+  'Grizzly Peak': 20
+  'Hollywood Land': 15
+  'Main Street, U.S.A.': 5
+  "Mickey's Toontown": 20
+  'New Orleans Square': 5
+  'Pacific Wharf': 30
+  'Paradise Gardens Park': 25
+  'Pixar Pier': 30
+  "Star Wars: Galaxy's Edge": 10
+  'Tomorrowland': 10
+'Avengers Campus':
+  'Adventureland': 20
+  'Avengers Campus': 0
+  'Cars Land': 5
+  'Critter Country': 30
+  'Fantasyland': 20
+  'Frontierland': 25
+  'Grizzly Peak': 10
+  'Hollywood Land': 5
+  'Main Street, U.S.A.': 15
+  "Mickey's Toontown": 30
+  'New Orleans Square': 25
+  'Pacific Wharf': 10
+  'Paradise Gardens Park': 10
+  'Pixar Pier': 15
+  "Star Wars: Galaxy's Edge": 25
+  'Tomorrowland': 20
+'Cars Land':
+  'Adventureland': 25
+  'Avengers Campus': 5
+  'Cars Land': 0
+  'Critter Country': 35
+  'Fantasyland': 25
+  'Frontierland': 30
+  'Grizzly Peak': 10
+  'Hollywood Land': 10
+  'Main Street, U.S.A.': 20
+  "Mickey's Toontown": 35
+  'New Orleans Square': 30
+  'Pacific Wharf': 5
+  'Paradise Gardens Park': 5
+  'Pixar Pier': 10
+  "Star Wars: Galaxy's Edge": 30
+  'Tomorrowland': 25
+'Critter Country':
+  'Adventureland': 10
+  'Avengers Campus': 30
+  'Cars Land': 35
+  'Critter Country': 0
+  'Fantasyland': 10
+  'Frontierland': 10
+  'Grizzly Peak': 30
+  'Hollywood Land': 25
+  'Main Street, U.S.A.': 15
+  "Mickey's Toontown": 20
+  'New Orleans Square': 5
+  'Pacific Wharf': 40
+  'Paradise Gardens Park': 35
+  'Pixar Pier': 40
+  "Star Wars: Galaxy's Edge": 5
+  'Tomorrowland': 20
+'Fantasyland':
+  'Adventureland': 10
+  'Avengers Campus': 20
+  'Cars Land': 25
+  'Critter Country': 10
+  'Fantasyland': 0
+  'Frontierland': 10
+  'Grizzly Peak': 20
+  'Hollywood Land': 15
+  'Main Street, U.S.A.': 5
+  "Mickey's Toontown": 10
+  'New Orleans Square': 15
+  'Pacific Wharf': 30
+  'Paradise Gardens Park': 25
+  'Pixar Pier': 30
+  "Star Wars: Galaxy's Edge": 5
+  'Tomorrowland': 10
+'Frontierland':
+  'Adventureland': 5
+  'Avengers Campus': 25
+  'Cars Land': 30
+  'Critter Country': 10
+  'Fantasyland': 10
+  'Frontierland': 0
+  'Grizzly Peak': 25
+  'Hollywood Land': 20
+  'Main Street, U.S.A.': 10
+  "Mickey's Toontown": 20
+  'New Orleans Square': 10
+  'Pacific Wharf': 35
+  'Paradise Gardens Park': 30
+  'Pixar Pier': 35
+  "Star Wars: Galaxy's Edge": 5
+  'Tomorrowland': 15
+'Grizzly Peak':
+  'Adventureland': 20
+  'Avengers Campus': 10
+  'Cars Land': 10
+  'Critter Country': 30
+  'Fantasyland': 20
+  'Frontierland': 25
+  'Grizzly Peak': 0
+  'Hollywood Land': 5
+  'Main Street, U.S.A.': 15
+  "Mickey's Toontown": 30
+  'New Orleans Square': 25
+  'Pacific Wharf': 10
+  'Paradise Gardens Park': 5
+  'Pixar Pier': 10
+  "Star Wars: Galaxy's Edge": 25
+  'Tomorrowland': 20
+'Hollywood Land':
+  'Adventureland': 15
+  'Avengers Campus': 5
+  'Cars Land': 10
+  'Critter Country': 25
+  'Fantasyland': 15
+  'Frontierland': 20
+  'Grizzly Peak': 5
+  'Hollywood Land': 0
+  'Main Street, U.S.A.': 10
+  "Mickey's Toontown": 25
+  'New Orleans Square': 20
+  'Pacific Wharf': 15
+  'Paradise Gardens Park': 10
+  'Pixar Pier': 15
+  "Star Wars: Galaxy's Edge": 20
+  'Tomorrowland': 15
+'Main Street, U.S.A.':
+  'Adventureland': 5
+  'Avengers Campus': 15
+  'Cars Land': 20
+  'Critter Country': 15
+  'Fantasyland': 5
+  'Frontierland': 10
+  'Grizzly Peak': 15
+  'Hollywood Land': 10
+  'Main Street, U.S.A.': 0
+  "Mickey's Toontown": 15
+  'New Orleans Square': 10
+  'Pacific Wharf': 25
+  'Paradise Gardens Park': 20
+  'Pixar Pier': 25
+  "Star Wars: Galaxy's Edge": 10
+  'Tomorrowland': 5
+"Mickey's Toontown":
+  'Adventureland': 20
+  'Avengers Campus': 30
+  'Cars Land': 35
+  'Critter Country': 20
+  'Fantasyland': 10
+  'Frontierland': 20
+  'Grizzly Peak': 30
+  'Hollywood Land': 25
+  'Main Street, U.S.A.': 15
+  "Mickey's Toontown": 0
+  'New Orleans Square': 25
+  'Pacific Wharf': 40
+  'Paradise Gardens Park': 35
+  'Pixar Pier': 40
+  "Star Wars: Galaxy's Edge": 15
+  'Tomorrowland': 20
+'New Orleans Square':
+  'Adventureland': 5
+  'Avengers Campus': 25
+  'Cars Land': 30
+  'Critter Country': 5
+  'Fantasyland': 15
+  'Frontierland': 10
+  'Grizzly Peak': 25
+  'Hollywood Land': 20
+  'Main Street, U.S.A.': 10
+  "Mickey's Toontown": 25
+  'New Orleans Square': 0
+  'Pacific Wharf': 35
+  'Paradise Gardens Park': 30
+  'Pixar Pier': 35
+  "Star Wars: Galaxy's Edge": 10
+  'Tomorrowland': 15
+'Pacific Wharf':
+  'Adventureland': 30
+  'Avengers Campus': 10
+  'Cars Land': 5
+  'Critter Country': 40
+  'Fantasyland': 30
+  'Frontierland': 35
+  'Grizzly Peak': 10
+  'Hollywood Land': 15
+  'Main Street, U.S.A.': 25
+  "Mickey's Toontown": 40
+  'New Orleans Square': 35
+  'Pacific Wharf': 0
+  'Paradise Gardens Park': 5
+  'Pixar Pier': 5
+  "Star Wars: Galaxy's Edge": 35
+  'Tomorrowland': 30
+'Paradise Gardens Park':
+  'Adventureland': 25
+  'Avengers Campus': 10
+  'Cars Land': 5
+  'Critter Country': 35
+  'Fantasyland': 25
+  'Frontierland': 30
+  'Grizzly Peak': 5
+  'Hollywood Land': 10
+  'Main Street, U.S.A.': 20
+  "Mickey's Toontown": 35
+  'New Orleans Square': 30
+  'Pacific Wharf': 5
+  'Paradise Gardens Park': 0
+  'Pixar Pier': 5
+  "Star Wars: Galaxy's Edge": 30
+  'Tomorrowland': 25
+'Pixar Pier':
+  'Adventureland': 30
+  'Avengers Campus': 15
+  'Cars Land': 10
+  'Critter Country': 40
+  'Fantasyland': 30
+  'Frontierland': 35
+  'Grizzly Peak': 10
+  'Hollywood Land': 15
+  'Main Street, U.S.A.': 25
+  "Mickey's Toontown": 40
+  'New Orleans Square': 35
+  'Pacific Wharf': 5
+  'Paradise Gardens Park': 5
+  'Pixar Pier': 0
+  "Star Wars: Galaxy's Edge": 35
+  'Tomorrowland': 30
+"Star Wars: Galaxy's Edge":
+  'Adventureland': 10
+  'Avengers Campus': 25
+  'Cars Land': 30
+  'Critter Country': 5
+  'Fantasyland': 5
+  'Frontierland': 5
+  'Grizzly Peak': 25
+  'Hollywood Land': 20
+  'Main Street, U.S.A.': 10
+  "Mickey's Toontown": 15
+  'New Orleans Square': 10
+  'Pacific Wharf': 35
+  'Paradise Gardens Park': 30
+  'Pixar Pier': 35
+  "Star Wars: Galaxy's Edge": 0
+  'Tomorrowland': 15
+'Tomorrowland':
+  'Adventureland': 10
+  'Avengers Campus': 20
+  'Cars Land': 25
+  'Critter Country': 20
+  'Fantasyland': 10
+  'Frontierland': 15
+  'Grizzly Peak': 20
+  'Hollywood Land': 15
+  'Main Street, U.S.A.': 5
+  "Mickey's Toontown": 20
+  'New Orleans Square': 15
+  'Pacific Wharf': 30
+  'Paradise Gardens Park': 25
+  'Pixar Pier': 30
+  "Star Wars: Galaxy's Edge": 15
+  'Tomorrowland': 0
