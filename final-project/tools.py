@@ -15,6 +15,7 @@ def _get_schema_type(_type: str):
         'int': "integer",
         'float': "number",
         'bool': "boolean",
+        'list': "array",
     }
 
     if result := type_map.get(_type):
@@ -38,6 +39,16 @@ def _get_strict_json_schema_type(annotation) -> dict:
         if len(non_none_args) == 1:
             return _get_strict_json_schema_type(non_none_args[0])
         raise TypeError(f"Unsupported Union with multiple non-None values: {annotation}")
+
+    if origin is list:
+        if len(args) == 1:
+            item_schema = _get_strict_json_schema_type(args[0])
+            return {"type": "array", "items": {"type": item_schema.get("type")}}
+        if len(args) == 0:
+            return {"type": "array", "items": {}}
+        raise TypeError(f"Unsupported list annotation with multiple item types: {annotation}")
+    if annotation is list:
+        return {"type": "array", "items": {}}
 
     if result := _get_schema_type(str(annotation.__name__)):
         return result

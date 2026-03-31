@@ -23,8 +23,7 @@ def conclude():
     """
     Conclude the conversation.
     """
-    print("CONCLUDE CALLED")
-    raise RuntimeError
+    return
 
 
 async def run_agent(

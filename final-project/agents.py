@@ -19,6 +19,7 @@ toolbox = ToolBox()
 toolbox.tool(conclude)
 toolbox.tool(load_skill)
 toolbox.tool(save_bucket_list)
+toolbox.tool(save_food_suggestions)
 
 
 @toolbox.tool

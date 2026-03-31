@@ -25,5 +25,18 @@ def save_bucket_list(bucket: list[str], filename: str) -> None:
     output: none
     """
     with open(filename, 'w') as file:
-        file.write(bucket)
+        for thing in bucket:
+            file.write(thing)
+            file.write("\n")
+    return None
+
+def save_food_suggestions(suggestions: str, filename: str) -> None:
+    """
+    Call this function to save food suggestions
+    input suggestions: list of suggestions returned to user
+    input filename: filename to be saved at
+    output: none
+    """
+    with open(filename,"w") as file:
+        file.write(suggestions)
     return None
