@@ -1,0 +1,21 @@
+Schedule:08:00-08:30 | Pirates of the Caribbean | walk 17 min | item 12 min
+08:30-09:00 | Indiana Jones Adventure: Temple of the Forbidden Eye | walk 5 min | item 25 min
+09:00-09:25 | Jungle Cruise | walk 0 min | item 25 min
+09:25-09:45 | Disneyland Railroad | walk 5 min | item 15 min
+09:45-10:10 | Star Wars: Millennium Falcon: Smugglers Run | walk 10 min | item 15 min
+10:10-10:40 | It's a Small World | walk 15 min | item 15 min
+10:40-11:00 | Mickey Mouse | walk 0 min | item 20 min
+11:00-11:20 | Minnie Mouse | walk 0 min | item 20 min
+11:20-11:55 | Mickey and Minnie's Runaway Railway | walk 0 min | item 35 min
+11:55-12:50 | Dumbo the Flying Elephant | walk 10 min | item 45 min
+12:50-13:25 | Storybook Land Canal Boats | walk 0 min | item 35 min
+13:25-14:20 | Matterhorn Bobsleds | walk 0 min | item 55 min
+14:20-15:30 | Peter Pan's Flight | walk 0 min | item 70 min
+15:30-16:35 | Buzz Lightyear Astro Blasters | walk 10 min | item 55 min
+16:35-17:20 | Star Tours: The Adventures Continue | walk 0 min | item 45 min
+17:20-18:20 | Big Thunder Mountain Railroad | walk 15 min | item 45 min
+18:20-19:25 | Star Wars: Rise of the Resistance | walk 5 min | item 60 min
+19:25-20:10 | Fantasmic! | walk 10 min | item 35 min
+20:10-20:45 | Nighttime Fireworks Spectacular | walk 0 min | item 35 min
+Dropped:Star Wars Land roaming characters (missing_data)
+End time: 20:45

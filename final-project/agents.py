@@ -20,7 +20,10 @@ toolbox.tool(conclude)
 toolbox.tool(load_skill)
 toolbox.tool(save_bucket_list)
 toolbox.tool(save_food_suggestions)
-
+toolbox.tool(create_schedule)
+toolbox.tool(save_schedule)
+toolbox.tool(save_user)
+toolbox.tool(get_user)
 
 @toolbox.tool
 def talk_to_user(message: str):

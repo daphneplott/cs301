@@ -177,8 +177,8 @@ class RidePlanner:
             avg_time = attraction.avg_total_time
             current_time = entry["item_time_raw"]
             savings = max(0.0, avg_time - current_time)
-            land_bonus = 5 if attraction.land == current_land else 0
-            score = entry["walk"] + current_time - savings - land_bonus
+            # land_bonus = 15 if attraction.land == current_land else 0
+            score = entry["walk"]*2 + current_time - savings
 
             if best_score is None or score < best_score:
                 best = entry

@@ -456,7 +456,7 @@ attractions:
     '22:00': 10
 - name: "It's a Small World"
   park: 'Disneyland Park'
-  land: 'Fantasyland'
+  land: "Mickey's Toontown"
   type: 'ride'
   avg_total_time: 10
   time_curve:

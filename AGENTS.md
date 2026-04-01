@@ -1,3 +1,5 @@
+If the user has indicated they would like to use myteam, do the following. Otherwise, ignore the following.
+
 Run `myteam get role <role>` with your role. 
 If you have not been given a role, use `myteam get role`.
 
