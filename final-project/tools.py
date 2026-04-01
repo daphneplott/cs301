@@ -5,6 +5,8 @@ from typing import Any, Callable, get_type_hints, Literal, get_origin, get_args,
 
 from openai.types.responses import FunctionToolParam
 
+from run_agent import current_agent
+
 _tools: dict[str, Callable] = {}
 logger = logging.getLogger(__name__)
 
@@ -145,11 +147,13 @@ class ToolBox:
         return tls
 
     async def run_tool(self, tool_name: str, **kwargs):
-        logger.debug('TOOL %s(%s)', tool_name, kwargs)
+        agent = current_agent.get(None)
+        agent_name = agent.get('name') if agent else 'Unknown'
+        logger.debug('TOOL %s called %s(%s)', agent_name, tool_name, kwargs)
         tool = self._funcs.get(tool_name)
         result = tool(**kwargs)
         if inspect.iscoroutine(result):
             result = await result
 
-        logger.debug('TOOL %s(%s) -> %s', tool_name, kwargs, result)
+        logger.debug('TOOL %s called %s(%s) -> %s', agent_name, tool_name, kwargs, result)
         return result

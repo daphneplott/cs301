@@ -79,13 +79,16 @@ def create_schedule(bucket_list_path: str, start_hour: int, end_hour: int,
 
     bucket_list_path = root / bucket_list_path
 
-    result = planner.plan(
-        bucket_list_path=bucket_list_path,
-        start_hour=start_hour,
-        end_hour=end_hour,
-        business_scale=business_scale,
-        park=park,
-    )
+    try:
+        result = planner.plan(
+            bucket_list_path=bucket_list_path,
+            start_hour=start_hour,
+            end_hour=end_hour,
+            business_scale=business_scale,
+            park=park,
+        )
+    except FileNotFoundError:
+        return "That bucket list does not exist yet. Return this information."
 
     output = ""
 
@@ -147,7 +150,7 @@ def get_user(username:str) -> str:
     output: semantic memory about user
     """
 
-    with open("parks.yaml", "r", encoding="utf-8") as f:
+    with open("user_information.yaml", "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
 
     user_data = data.get(username)

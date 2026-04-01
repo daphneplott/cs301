@@ -1,8 +1,21 @@
 Daphne:
-  visit_planned: "Early June"
-  days_in_disneyland: "1"
-  days_in_c_adventure: "0"
-  hours_per_day: "all day"
-  bucket_list_file_name: "daphne_bucket_list.txt"
-  food_suggestions_file_name: "daphne_food.txt"
-
+  visit_planned: Early June
+  days_in_disneyland: '1'
+  days_in_c_adventure: '0'
+  hours_per_day: all day
+  bucket_list_file_name: Daphne_bucket_list.txt
+  food_suggestions_file_name: Daphne_food.txt
+Butter:
+  visit_planned: early June
+  days_in_disneyland: '2'
+  days_in_c_adventure: '0'
+  hours_per_day: "Day 1: all day; Day 2: 8am\u2013noon"
+  bucket_list_file_name: Butter_bucket_list.txt
+  food_suggestions_file_name: Butter_food.txt
+Ricotta:
+  visit_planned: early March
+  days_in_disneyland: '1'
+  days_in_c_adventure: '1'
+  hours_per_day: all day
+  bucket_list_file_name: Ricotta_bucket_list.txt
+  food_suggestions_file_name: Ricotta_food.txt
