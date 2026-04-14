@@ -1,0 +1,15 @@
+Schedule:
+09:00-09:45 Star Wars: Rise of the Resistance
+09:45-09:55 Star Wars: Millennium Falcon: Smugglers Run
+09:55-10:25 Big Thunder Mountain Railroad
+10:25-11:05 Pirates of the Caribbean
+11:05-11:45 The Haunted Mansion
+11:45-12:35 Indiana Jones Adventure: Temple of the Forbidden Eye
+12:35-13:25 Matterhorn Bobsleds
+13:25-14:05 Mickey Mouse
+14:05-14:35 Minnie Mouse
+14:35-15:15 Mickey and Minnie's Runaway Railway
+15:15-16:15 Buzz Lightyear Astro Blasters
+16:15-17:00 Space Mountain
+Dropped: Fantasmic! (insufficient_time)
+End time: 17:00

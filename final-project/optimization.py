@@ -39,6 +39,7 @@ class RidePlanner:
     ROUND_STEP = 5
     ENTRANCE_NAME = "__ENTRANCE__"
     ENTRANCE_LAND = "Entrance"
+    FREE_TIME_NAME = "Free Time"
 
     def __init__(
         self,
@@ -136,7 +137,31 @@ class RidePlanner:
                 park=park,
             )
             if next_choice is None:
-                break
+                wait_plan = self._wait_for_night_show(
+                    current_item=current_item,
+                    remaining=remaining,
+                    time_cursor=time_cursor,
+                    scale_multiplier=scale_multiplier,
+                    end_time=end_time,
+                    park=park,
+                )
+                if wait_plan is None:
+                    break
+
+                if wait_plan["wait_end"] > wait_plan["wait_start"]:
+                    schedule.append(
+                        self._free_time_output(
+                            start_minutes=wait_plan["wait_start"],
+                            end_minutes=wait_plan["wait_end"],
+                        )
+                    )
+
+                next_choice = wait_plan["entry"]
+                schedule.append(self._entry_for_output(next_choice))
+                time_cursor = next_choice["end_minutes"]
+                current_item = next_choice["name"]
+                remaining.remove(current_item)
+                continue
 
             schedule.append(self._entry_for_output(next_choice))
             time_cursor = next_choice["end_minutes"]
@@ -185,6 +210,51 @@ class RidePlanner:
                 best_score = score
 
         return best
+
+    def _wait_for_night_show(
+        self,
+        current_item: str,
+        remaining: List[str],
+        time_cursor: int,
+        scale_multiplier: float,
+        end_time: int,
+        park: str,
+    ) -> Optional[Dict[str, Any]]:
+        if time_cursor >= self.NIGHT_SHOW_WINDOW[0]:
+            return None
+
+        window_start = self.NIGHT_SHOW_WINDOW[0]
+        best_entry: Optional[Dict[str, Any]] = None
+
+        for candidate in list(remaining):
+            attraction = self.attractions.get(candidate)
+            if attraction is None or attraction.park != park:
+                continue
+            if not self._is_night_show(attraction):
+                continue
+
+            entry = self._schedule_entry(
+                from_item=current_item,
+                to_item=candidate,
+                start_time=window_start,
+                scale_multiplier=scale_multiplier,
+            )
+            if entry is None or entry["end_minutes"] > end_time:
+                continue
+            if not self._fits_window(attraction, window_start, scale_multiplier):
+                continue
+
+            if best_entry is None or entry["end_minutes"] < best_entry["end_minutes"]:
+                best_entry = entry
+
+        if best_entry is None:
+            return None
+
+        return {
+            "wait_start": time_cursor,
+            "wait_end": window_start,
+            "entry": best_entry,
+        }
 
     # ------------------------- Data helpers -------------------------
 
@@ -371,6 +441,16 @@ class RidePlanner:
             "name": entry["name"],
             "walk": entry["walk"],
             "item_time": entry["item_time"],
+        }
+
+    def _free_time_output(self, start_minutes: int, end_minutes: int) -> Dict[str, Any]:
+        duration = max(0, end_minutes - start_minutes)
+        return {
+            "start": self._fmt_time(start_minutes),
+            "end": self._fmt_time(end_minutes),
+            "name": self.FREE_TIME_NAME,
+            "walk": 0,
+            "item_time": duration,
         }
 
     def _build_dropped(

@@ -72,13 +72,17 @@ async def main(agent_config: Path, message: str):
 
         main_agent = next(agent for agent in agents if agent['name'] == 'main')
 
+        start = True
         while True:
-            message = input('User: ')
-            if message == "":
-                print("Have an amazing day!")
-                break
-            history.append({'role': 'user', 'content': message})
-
+            if not start:
+                message = input('User: ')
+                if message == "":
+                    print("Have an amazing day!")
+                    break
+                history.append({'role': 'user', 'content': message})
+            else:
+                start = False
+        
             response = await run_agent(
             client, toolbox, main_agent,
             message, usage=usages, history = history

@@ -53,7 +53,7 @@ Disneyland Park attractions (include a typical wait per ride):
 - Sleeping Beauty Castle Walkthrough - walk-through attraction (5-10)
 - Astro Orbiter - rocket spinner (10-30)
 - Autopia - gas car driving (10-30)
-- Star Tours - The Adventures Continue - motion simulator (30-45)
+- Star Tours: The Adventures Continue - motion simulator (30-45)
 - Buzz Lightyear Astro Blasters - interactive shooter (30-45)
 - Space Mountain - thrill coaster (45-60)
 - Disneyland Monorail - park-to-Downtown Disney loop (10-30)
@@ -69,7 +69,7 @@ Disneyland Park attractions (include a typical wait per ride):
 - CenTOONial Park - play area (5-10)
 - Goofy's How-To-Play Yard - play area (5-10)
 - Donald's Duck Pond - play area (5-10)
-- Millennium Falcon: Smugglers Run - simulator (10-30)
+- Star Wars: Millennium Falcon: Smugglers Run - simulator (10-30)
 - Star Wars: Rise of the Resistance - flagship dark ride (45-60)
 
 Disney California Adventure attractions (include a typical wait per ride):
@@ -103,8 +103,8 @@ Disney California Adventure attractions (include a typical wait per ride):
 
 Character experiences (Disneyland Park) (roughly 30 minutes per experience):
 - Fantasy Faire (princesses)
-- Mickey's House and Meet Mickey
-- Minnie's House and Meet Minnie
+- Mickey Mouse
+- Minnie Mouse
 - Star War's Land roaming characters
 
 Character experiences (Disney California Adventure) (roughly 30 minutes per experience):

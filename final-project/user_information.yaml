@@ -19,3 +19,10 @@ Ricotta:
   hours_per_day: all day
   bucket_list_file_name: Ricotta_bucket_list.txt
   food_suggestions_file_name: Ricotta_food.txt
+Mars:
+  visit_planned: late September
+  days_in_disneyland: '1'
+  days_in_c_adventure: '0'
+  hours_per_day: all day
+  bucket_list_file_name: Mars_bucket_list.txt
+  food_suggestions_file_name: Mars_food.txt
