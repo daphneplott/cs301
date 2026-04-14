@@ -40,3 +40,10 @@ Cheesecake:
   hours_per_day: All day
   bucket_list_file_name: 'Username: Gruyere_bucket_list.txt'
   food_suggestions_file_name: 'Username: Gruyere_food.txt'
+Gruyere:
+  visit_planned: February
+  days_in_disneyland: '1'
+  days_in_c_adventure: '0'
+  hours_per_day: most of the day
+  bucket_list_file_name: Gruyere_bucket_list.txt
+  food_suggestions_file_name: Gruyere_food.txt
