@@ -98,18 +98,26 @@ async def main(agent_config: Path, message: str):
     print_usage(usages)
 
 
-def _configure_logging(debug: bool) -> None:
+def _configure_logging(debug: bool, log_file: Path | None) -> None:
     local_level = logging.DEBUG if debug else logging.INFO
-    use_dark_gray = (
-        sys.stderr.isatty()
-        and os.getenv('NO_COLOR') is None
-        and os.getenv('TERM', '').lower() != 'dumb'
-    )
-    format_string = f'\x1b[90m{LOG_FORMAT}\x1b[0m' if use_dark_gray else LOG_FORMAT
+    if log_file is None:
+        use_dark_gray = (
+            sys.stderr.isatty()
+            and os.getenv('NO_COLOR') is None
+            and os.getenv('TERM', '').lower() != 'dumb'
+        )
+        format_string = f'\x1b[90m{LOG_FORMAT}\x1b[0m' if use_dark_gray else LOG_FORMAT
+        handler = logging.StreamHandler()
+    else:
+        log_file.parent.mkdir(parents=True, exist_ok=True)
+        format_string = LOG_FORMAT
+        handler = logging.FileHandler(log_file, encoding='utf-8')
+
     logging.basicConfig(
         level=logging.WARNING,
         format=format_string,
         datefmt='%H:%M:%S',
+        handlers=[handler],
         force=True,
     )
     for logger_name in ('__main__', 'agents', 'run_agent', 'tools', 'usage'):
@@ -121,6 +129,12 @@ if __name__ == '__main__':
     parser.add_argument('agent_config', type=Path, nargs='?', default=Path('quotes.yaml'))
     parser.add_argument('message', nargs='?', default=None)
     parser.add_argument('--debug', action='store_true')
+    parser.add_argument(
+        '--log-file',
+        type=Path,
+        default=None,
+        help='Write logs to a file instead of the terminal.',
+    )
     args = parser.parse_args()
-    _configure_logging(args.debug)
+    _configure_logging(args.debug, args.log_file)
     asyncio.run(main(args.agent_config, args.message))

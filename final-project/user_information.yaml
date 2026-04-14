@@ -26,3 +26,17 @@ Mars:
   hours_per_day: all day
   bucket_list_file_name: Mars_bucket_list.txt
   food_suggestions_file_name: Mars_food.txt
+Cheesecake:
+  visit_planned: early June
+  days_in_disneyland: '1'
+  days_in_c_adventure: '0'
+  hours_per_day: all day
+  bucket_list_file_name: Cheesecake_bucket_list.txt
+  food_suggestions_file_name: Cheesecake_food.txt
+'Username: Gruyere':
+  visit_planned: Spring Break
+  days_in_disneyland: '1'
+  days_in_c_adventure: '0'
+  hours_per_day: All day
+  bucket_list_file_name: 'Username: Gruyere_bucket_list.txt'
+  food_suggestions_file_name: 'Username: Gruyere_food.txt'

@@ -1,0 +1,221 @@
+run_agent. DEBU 08:59:30 AGENT main
+run_agent. DEBU 08:59:41 RESPONSE from main in 10.75 seconds
+run_agent. DEBU 08:59:47 AGENT main
+run_agent. DEBU 09:00:00 RESPONSE from main in 12.60 seconds
+tools.py   DEBU 09:00:00 TOOL main called get_user({'username': 'Username: New user'})
+tools.py   DEBU 09:00:00 TOOL main called get_user({'username': 'Username: New user'}) -> Username: New user not found
+run_agent. DEBU 09:00:00 AGENT main
+run_agent. DEBU 09:00:15 RESPONSE from main in 15.25 seconds
+run_agent. DEBU 09:00:24 AGENT main
+run_agent. DEBU 09:00:31 RESPONSE from main in 6.89 seconds
+tools.py   DEBU 09:00:31 TOOL main called get_user({'username': 'Username: Gruyere'})
+tools.py   DEBU 09:00:31 TOOL main called get_user({'username': 'Username: Gruyere'}) -> Username: Gruyere not found
+run_agent. DEBU 09:00:31 AGENT main
+run_agent. DEBU 09:00:44 RESPONSE from main in 13.41 seconds
+run_agent. DEBU 09:01:26 AGENT main
+run_agent. DEBU 09:01:53 RESPONSE from main in 26.86 seconds
+tools.py   DEBU 09:01:53 TOOL main called get_user({'username': 'Username: Gruyere'})
+tools.py   DEBU 09:01:53 TOOL main called get_user({'username': 'Username: Gruyere'}) -> Username: Gruyere not found
+run_agent. DEBU 09:01:53 AGENT main
+run_agent. DEBU 09:02:03 RESPONSE from main in 9.82 seconds
+tools.py   DEBU 09:02:03 TOOL main called save_user({'username': 'Username: Gruyere', 'visit_planned': 'Spring Break', 'days_in_disneyland': '1', 'days_in_c_adventure': '0', 'hours_per_day': 'All day'})
+tools.py   DEBU 09:02:03 TOOL main called save_user({'username': 'Username: Gruyere', 'visit_planned': 'Spring Break', 'days_in_disneyland': '1', 'days_in_c_adventure': '0', 'hours_per_day': 'All day'}) -> Success
+run_agent. DEBU 09:02:03 AGENT main
+run_agent. DEBU 09:02:13 RESPONSE from main in 10.64 seconds
+run_agent. DEBU 09:02:24 AGENT main
+run_agent. DEBU 09:02:53 RESPONSE from main in 29.42 seconds
+tools.py   DEBU 09:02:53 TOOL main called get_user({'username': 'Username: Gruyere'})
+tools.py   DEBU 09:02:53 TOOL main called get_user({'username': 'Username: Gruyere'}) -> {'visit_planned': 'Spring Break', 'days_in_disneyland': '1', 'days_in_c_adventure': '0', 'hours_per_day': 'All day', 'bucket_list_file_name': 'Username: Gruyere_bucket_list.txt', 'food_suggestions_file_name': 'Username: Gruyere_food.txt'}
+run_agent. DEBU 09:02:53 AGENT main
+run_agent. DEBU 09:03:00 RESPONSE from main in 6.44 seconds
+tools.py   DEBU 09:03:00 TOOL main called bucket_list_creator({'input': 'Username: Gruyere'})
+run_agent. DEBU 09:03:00 AGENT bucket_list_creator
+run_agent. DEBU 09:03:03 RESPONSE from bucket_list_creator in 3.38 seconds
+tools.py   DEBU 09:03:03 TOOL bucket_list_creator called get_user({'username': 'Gruyere'})
+tools.py   DEBU 09:03:03 TOOL bucket_list_creator called get_user({'username': 'Gruyere'}) -> Gruyere not found
+run_agent. DEBU 09:03:03 AGENT bucket_list_creator
+run_agent. DEBU 09:03:12 RESPONSE from bucket_list_creator in 8.69 seconds
+tools.py   DEBU 09:03:12 TOOL bucket_list_creator called talk_to_user({'message': "I couldn't locate a saved profile for username 'Gruyere'. To tailor your Disneyland bucket list for a single day, how much do you already know about Disneyland? Are you a first-timer, or have you visited before?"})
+tools.py   DEBU 09:03:43 TOOL bucket_list_creator called talk_to_user({'message': "I couldn't locate a saved profile for username 'Gruyere'. To tailor your Disneyland bucket list for a single day, how much do you already know about Disneyland? Are you a first-timer, or have you visited before?"}) -> I'm a first timer to Disneyland.
+run_agent. DEBU 09:03:43 AGENT bucket_list_creator
+run_agent. DEBU 09:03:48 RESPONSE from bucket_list_creator in 4.46 seconds
+tools.py   DEBU 09:03:48 TOOL bucket_list_creator called talk_to_user({'message': 'Great—since you’re a first-timer, the next step is to tailor the plan to your group. What types of ages are in your party? Roughly: kids, teens, adults, seniors. Exact ages aren’t needed.'})
+tools.py   DEBU 09:04:10 TOOL bucket_list_creator called talk_to_user({'message': 'Great—since you’re a first-timer, the next step is to tailor the plan to your group. What types of ages are in your party? Roughly: kids, teens, adults, seniors. Exact ages aren’t needed.'}) -> It's some adults, with some teenagers.
+run_agent. DEBU 09:04:10 AGENT bucket_list_creator
+run_agent. DEBU 09:04:15 RESPONSE from bucket_list_creator in 5.20 seconds
+tools.py   DEBU 09:04:15 TOOL bucket_list_creator called talk_to_user({'message': 'Great—knowing there are adults and some teenagers helps. What types of characters would you like to meet? For example: classic Disney Princesses, Star Wars characters, Marvel, Pixar pals, or character meet-and-greets with generic Disney characters.'})
+tools.py   DEBU 09:04:28 TOOL bucket_list_creator called talk_to_user({'message': 'Great—knowing there are adults and some teenagers helps. What types of characters would you like to meet? For example: classic Disney Princesses, Star Wars characters, Marvel, Pixar pals, or character meet-and-greets with generic Disney characters.'}) -> Let's meet Mickey and Minnie, but nobody else.
+run_agent. DEBU 09:04:28 AGENT bucket_list_creator
+run_agent. DEBU 09:04:36 RESPONSE from bucket_list_creator in 7.77 seconds
+tools.py   DEBU 09:04:36 TOOL bucket_list_creator called talk_to_user({'message': 'Great—Mickey and Minnie it is. What types of shows are you interested in? Examples: parades, fireworks, stage shows, character cavalcades, or live performances.'})
+tools.py   DEBU 09:04:50 TOOL bucket_list_creator called talk_to_user({'message': 'Great—Mickey and Minnie it is. What types of shows are you interested in? Examples: parades, fireworks, stage shows, character cavalcades, or live performances.'}) -> I think just the nightime spectaculars
+run_agent. DEBU 09:04:50 AGENT bucket_list_creator
+run_agent. DEBU 09:04:55 RESPONSE from bucket_list_creator in 5.57 seconds
+tools.py   DEBU 09:04:55 TOOL bucket_list_creator called talk_to_user({'message': 'Nighttime spectaculars noted. What types of rides are you interested in? For example: gentle dark rides, classic Disneyland classics, thrill coasters, family-friendly attractions, or characters-themed rides.'})
+tools.py   DEBU 09:05:25 TOOL bucket_list_creator called talk_to_user({'message': 'Nighttime spectaculars noted. What types of rides are you interested in? For example: gentle dark rides, classic Disneyland classics, thrill coasters, family-friendly attractions, or characters-themed rides.'}) -> A little bit of everything, but nothing too kidish or my teenagers will be bored.
+run_agent. DEBU 09:05:25 AGENT bucket_list_creator
+run_agent. DEBU 09:05:33 RESPONSE from bucket_list_creator in 8.30 seconds
+tools.py   DEBU 09:05:33 TOOL bucket_list_creator called talk_to_user({'message': "Thanks. Do you have any must-do attractions or experiences you definitely want to include (e.g., Space Mountain, Radiator Springs Racers, Star Wars: Galaxy's Edge)? If not, I can propose a balanced one-day plan based on your preferences."})
+tools.py   DEBU 09:06:00 TOOL bucket_list_creator called talk_to_user({'message': "Thanks. Do you have any must-do attractions or experiences you definitely want to include (e.g., Space Mountain, Radiator Springs Racers, Star Wars: Galaxy's Edge)? If not, I can propose a balanced one-day plan based on your preferences."}) -> We definetly have to do the new ride, I think it's like Tiana something or another?
+run_agent. DEBU 09:06:00 AGENT bucket_list_creator
+run_agent. DEBU 09:06:15 RESPONSE from bucket_list_creator in 14.98 seconds
+tools.py   DEBU 09:06:15 TOOL bucket_list_creator called load_skill({'skill_name': 'BUCKET_LIST_SKILL.md'})
+tools.py   DEBU 09:06:15 TOOL bucket_list_creator called load_skill({'skill_name': 'BUCKET_LIST_SKILL.md'}) -> Based on the information the user has given you, create a bucket list for their visit day at Disneyland Resort (Disneyland Park + Disney California Adventure).
+
+Focus only on characters, shows, and attractions. Do not include food or dining.
+
+Output format:
+Characters:
+- Name - 1 short note
+
+Shows:
+- Name - 1 short note
+
+Attractions:
+- Name - 1 short note
+
+Each item should have a single concise note (theme, thrill level, or why it fits).
+
+Length guidance:
+- Half-day visit: build a shorter list that is realistically doable in half a day.
+- Full-day visit: build a longer list, but keep it slightly shorter than the absolute max they could do.
+
+Static roster (as of 2026-03-23). Use these as the available options.
+Exclude seasonal/holiday items unless the user explicitly asks for them.
+
+Based on the season, attractions can have different wait times. In the off-peak months, such as early in the year, or at the start of school,
+wait times will be shorter. During the summer, spring and fall breaks, and closer to Christmas, wait times will be longer.
+
+Disneyland Park attractions (include a typical wait per ride):
+- Disneyland Railroad - scenic park loop (10-30)
+- The Disney Gallery - walkthrough exhibits (5-10)
+- Main Street Vehicles - classic vehicles (5-10)
+- Main Street Opera House (Walt Disney - A Magical Life; Great Moments with Mr. Lincoln) - theater show (10-30)
+- Main Street Cinema - short films (5-10)
+- Walt Disney's Enchanted Tiki Room - audio-animatronic show (10-30)
+- Jungle Cruise - skipper-led boat ride (30-45)
+- Indiana Jones Adventure: Temple of the Forbidden Eye - thrill dark ride (45-60)
+- Adventureland Treehouse - walk-through treehouse (5-10)
+- Big Thunder Mountain Railroad - classic coaster (30-45)
+- Rivers of America (Mark Twain Riverboat; Pirate's Lair on Tom Sawyer Island; Sailing Ship Columbia) - scenic river options (10-30)
+- Frontierland Shootin' Exposition - interactive shooting gallery (10-30)
+- Fantasyland Theatre - stage show venue (10-30)
+- It's a Small World - classic boat ride (5-10)
+- Mr. Toad's Wild Ride - classic dark ride (10-30)
+- Peter Pan's Flight - flying dark ride (45-60)
+- Pinocchio's Daring Journey - classic dark ride (10-30)
+- Snow White's Enchanted Wish - classic dark ride (10-30)
+- Storybook Land Canal Boats - storybook boat ride (10-30)
+- Dumbo the Flying Elephant - spinner ride (10-30)
+- Casey Jr. Circus Train - kiddie train ride (10-30)
+- Alice in Wonderland - dark ride (10-30)
+- Matterhorn Bobsleds - coaster (30-45)
+- King Arthur Carrousel - carousel (5-10)
+- Mad Tea Party - spinning teacups (10-30)
+- Sleeping Beauty Castle Walkthrough - walk-through attraction (5-10)
+- Astro Orbiter - rocket spinner (10-30)
+- Autopia - gas car driving (10-30)
+- Star Tours: The Adventures Continue - motion simulator (30-45)
+- Buzz Lightyear Astro Blasters - interactive shooter (30-45)
+- Space Mountain - thrill coaster (45-60)
+- Disneyland Monorail - park-to-Downtown Disney loop (10-30)
+- Finding Nemo Submarine Voyage - submarine ride (30-45)
+- Pirates of the Caribbean - classic boat dark ride (30-45)
+- The Haunted Mansion - classic dark ride (45-60)
+- Davy Crockett Explorer Canoes - paddle canoe ride (10-30)
+- The Many Adventures of Winnie the Pooh - family dark ride (10-30)
+- Tiana's Bayou Adventure - log flume (45-60)
+- Mickey and Minnie's Runaway Railway - trackless dark ride (30-45)
+- Roger Rabbit's Car Toon Spin - dark ride (10-30)
+- Chip 'n' Dale's Gadgetcoaster - junior coaster (10-30)
+- CenTOONial Park - play area (5-10)
+- Goofy's How-To-Play Yard - play area (5-10)
+- Donald's Duck Pond - play area (5-10)
+- Star Wars: Millennium Falcon: Smugglers Run - simulator (10-30)
+- Star Wars: Rise of the Resistance - flagship dark ride (45-60)
+
+Disney California Adventure attractions (include a typical wait per ride):
+- Hyperion Theater - live stage shows (30-45)
+- Disney Jr. Mickey Mouse Clubhouse Live! - kids show (10-30)
+- Mickey's PhilharMagic - 3D film (10-30)
+- Monsters, Inc. Mike and Sulley to the Rescue! - dark ride (30-45)
+- Animation Academy - drawing class (10-30)
+- Sorcerer's Workshop - interactive exhibits (10-30)
+- Turtle Talk with Crush - interactive show (10-30)
+- Guardians of the Galaxy - Mission: Breakout! - thrill drop ride (45-60)
+- WEB SLINGERS: A Spider-Man Adventure - interactive dark ride (45-60)
+- Luigi's Rollickin' Roadsters - trackless dance ride (30-45)
+- Mater's Junkyard Jamboree - spinning ride (10-30)
+- Radiator Springs Racers - flagship ride (45-60)
+- The Bakery Tour - walk-through (5-10)
+- Games of Pixar Pier - midway games (10-30)
+- Jessie's Critter Carousel - carousel (5-10)
+- Inside Out Emotional Whirlwind - spinner ride (10-30)
+- Incredicoaster - thrill coaster (30-45)
+- Pixar Pal-A-Round - ferris wheel (30-45)
+- Toy Story Midway Mania! - interactive shooter (45-60)
+- Golden Zephyr - spinning ride (10-30)
+- Goofy's Sky School - wild mouse coaster (30-45)
+- Jumpin' Jellyfish - mild drop ride (10-30)
+- The Little Mermaid: Ariel's Undersea Adventure - dark ride (10-30)
+- Silly Symphony Swings - swing ride (10-30)
+- Grizzly River Run - raft ride (45-60)
+- Soarin' Around the World - simulator (45-60)
+- Redwood Creek Challenge Trail - play area (5-10)
+
+Character experiences (Disneyland Park) (roughly 30 minutes per experience):
+- Fantasy Faire (princesses)
+- Mickey Mouse
+- Minnie Mouse
+- Star War's Land roaming characters
+
+Character experiences (Disney California Adventure) (roughly 30 minutes per experience):
+- Avenger's Campus roaming characters
+- Anna and Elsa's Royal Welcome
+- Guardians of the Galaxy: Awesome Dance Off!
+- Meet the Residents of Radiator Springs in Cars Land
+- See Disney Pals on Buena Vista Street
+- See Pixar Pals at Pixar Pier
+- Turning Red Character Meet and Greet
+
+Major shows and parades (use if the user requests shows):
+- Disneyland Park: Fantasmic!, Fire of the Rising Moons, Shadows of Memory: A Skywalker Saga, Nighttime Firework Spectacular
+- Disney California Adventure: World of Color
+
+If the user provides too few preferences, include a few classic/iconic picks so the list feels complete.
+Ensure the list matches the user's preferences and time available. In most cases, the attractions list should
+be at least 10 options. Do not underfill.
+
+run_agent. DEBU 09:06:15 AGENT bucket_list_creator
+run_agent. DEBU 09:06:50 RESPONSE from bucket_list_creator in 35.53 seconds
+tools.py   DEBU 09:06:50 TOOL bucket_list_creator called talk_to_user({'message': "Here’s a proposed one-day Disneyland Park bucket list based on your preferences. Please review and confirm or adjust before I save it.\n\nCharacters:\n- Mickey Mouse - Classic meet-and-greet at Town Square.\n- Minnie Mouse - Classic meet-and-greet near Toontown.\n\nShows:\n- Fantasmic! - Classic nighttime water/pyro show on the Rivers of America.\n- Nighttime Fireworks Spectacular - Castle fireworks show (seasonal schedule).\n\nAttractions:\n- Tiana's Bayou Adventure - New Bayou-themed log flume in New Orleans Square; family-friendly thrill (45-60 minutes).\n- Mickey and Minnie's Runaway Railway - Trackless dark ride in Toontown; fun for all ages (30-45).\n- Pirates of the Caribbean - Classic boat ride; immersive and long-running favorite (30-45).\n- Space Mountain - Indoor thrill coaster (45-60).\n- Indiana Jones Adventure: Temple of the Forbidden Eye - Thrill dark ride (45-60).\n- Big Thunder Mountain Railroad - Classic coaster (30-45).\n- Star Tours: The Adventures Continue - Motion simulator (30-45).\n- Matterhorn Bobsleds - Coaster (30-45).\n- Peter Pan's Flight - Flying dark ride (45-60).\n- It’s a Small World - Classic boat ride (5-10).\n- The Haunted Mansion - Classic dark ride (45-60).\n\nWould you like me to save this bucket list and proceed?"})
+tools.py   DEBU 09:07:12 TOOL bucket_list_creator called talk_to_user({'message': "Here’s a proposed one-day Disneyland Park bucket list based on your preferences. Please review and confirm or adjust before I save it.\n\nCharacters:\n- Mickey Mouse - Classic meet-and-greet at Town Square.\n- Minnie Mouse - Classic meet-and-greet near Toontown.\n\nShows:\n- Fantasmic! - Classic nighttime water/pyro show on the Rivers of America.\n- Nighttime Fireworks Spectacular - Castle fireworks show (seasonal schedule).\n\nAttractions:\n- Tiana's Bayou Adventure - New Bayou-themed log flume in New Orleans Square; family-friendly thrill (45-60 minutes).\n- Mickey and Minnie's Runaway Railway - Trackless dark ride in Toontown; fun for all ages (30-45).\n- Pirates of the Caribbean - Classic boat ride; immersive and long-running favorite (30-45).\n- Space Mountain - Indoor thrill coaster (45-60).\n- Indiana Jones Adventure: Temple of the Forbidden Eye - Thrill dark ride (45-60).\n- Big Thunder Mountain Railroad - Classic coaster (30-45).\n- Star Tours: The Adventures Continue - Motion simulator (30-45).\n- Matterhorn Bobsleds - Coaster (30-45).\n- Peter Pan's Flight - Flying dark ride (45-60).\n- It’s a Small World - Classic boat ride (5-10).\n- The Haunted Mansion - Classic dark ride (45-60).\n\nWould you like me to save this bucket list and proceed?"}) -> Can you also add the other Star Wars rides?
+run_agent. DEBU 09:07:12 AGENT bucket_list_creator
+run_agent. DEBU 09:07:28 RESPONSE from bucket_list_creator in 15.74 seconds
+tools.py   DEBU 09:07:28 TOOL bucket_list_creator called talk_to_user({'message': "Sure—I'll add the other Star Wars rides as requested. Here’s the updated Disneyland Park bucket list (still based on a one-day plan):\n\nCharacters:\n- Mickey Mouse - Classic meet-and-greet at Town Square.\n- Minnie Mouse - Classic meet-and-greet near Toontown.\n\nShows:\n- Fantasmic! - Classic nighttime water/pyro show on the Rivers of America.\n- Nighttime Fireworks Spectacular - Castle fireworks show (seasonal schedule).\n\nAttractions:\n- Tiana's Bayou Adventure - New Bayou-themed log flume in New Orleans Square; family-friendly thrill (45-60).\n- Mickey and Minnie's Runaway Railway - Trackless dark ride in Toontown; fun for all ages (30-45).\n- Pirates of the Caribbean - Classic boat ride; immersive and long-running favorite (30-45).\n- Space Mountain - Indoor thrill coaster (45-60).\n- Indiana Jones Adventure: Temple of the Forbidden Eye - Thrill dark ride (45-60).\n- Big Thunder Mountain Railroad - Classic coaster (30-45).\n- Star Tours: The Adventures Continue - Motion simulator (30-45).\n- Star Wars: Millennium Falcon: Smugglers Run - Simulator ride in Galaxy’s Edge (10-30).\n- Star Wars: Rise of the Resistance - Flagship dark ride in Galaxy’s Edge (45-60).\n- Matterhorn Bobsleds - Coaster (30-45).\n- Peter Pan's Flight - Flying dark ride (45-60).\n- It’s a Small World - Classic boat ride (5-10).\n- The Haunted Mansion - Classic dark ride (45-60).\n\nWould you like me to save this updated bucket list and proceed?"})
+tools.py   DEBU 09:07:51 TOOL bucket_list_creator called talk_to_user({'message': "Sure—I'll add the other Star Wars rides as requested. Here’s the updated Disneyland Park bucket list (still based on a one-day plan):\n\nCharacters:\n- Mickey Mouse - Classic meet-and-greet at Town Square.\n- Minnie Mouse - Classic meet-and-greet near Toontown.\n\nShows:\n- Fantasmic! - Classic nighttime water/pyro show on the Rivers of America.\n- Nighttime Fireworks Spectacular - Castle fireworks show (seasonal schedule).\n\nAttractions:\n- Tiana's Bayou Adventure - New Bayou-themed log flume in New Orleans Square; family-friendly thrill (45-60).\n- Mickey and Minnie's Runaway Railway - Trackless dark ride in Toontown; fun for all ages (30-45).\n- Pirates of the Caribbean - Classic boat ride; immersive and long-running favorite (30-45).\n- Space Mountain - Indoor thrill coaster (45-60).\n- Indiana Jones Adventure: Temple of the Forbidden Eye - Thrill dark ride (45-60).\n- Big Thunder Mountain Railroad - Classic coaster (30-45).\n- Star Tours: The Adventures Continue - Motion simulator (30-45).\n- Star Wars: Millennium Falcon: Smugglers Run - Simulator ride in Galaxy’s Edge (10-30).\n- Star Wars: Rise of the Resistance - Flagship dark ride in Galaxy’s Edge (45-60).\n- Matterhorn Bobsleds - Coaster (30-45).\n- Peter Pan's Flight - Flying dark ride (45-60).\n- It’s a Small World - Classic boat ride (5-10).\n- The Haunted Mansion - Classic dark ride (45-60).\n\nWould you like me to save this updated bucket list and proceed?"}) -> That looks good, save it!
+run_agent. DEBU 09:07:51 AGENT bucket_list_creator
+run_agent. DEBU 09:08:05 RESPONSE from bucket_list_creator in 13.71 seconds
+tools.py   DEBU 09:08:05 TOOL bucket_list_creator called save_bucket_list({'bucket': ['Mickey Mouse', 'Minnie Mouse', 'Fantasmic!', 'Nighttime Fireworks Spectacular', "Tiana's Bayou Adventure", "Mickey and Minnie's Runaway Railway", 'Pirates of the Caribbean', 'Space Mountain', 'Indiana Jones Adventure: Temple of the Forbidden Eye', 'Big Thunder Mountain Railroad', 'Star Tours: The Adventures Continue', 'Star Wars: Millennium Falcon: Smugglers Run', 'Star Wars: Rise of the Resistance', 'Matterhorn Bobsleds', "Peter Pan's Flight", "It's a Small World", 'The Haunted Mansion'], 'filename': 'Gruyere_Disneyland_Day_Bucket_List.txt'})
+tools.py   DEBU 09:08:05 TOOL bucket_list_creator called save_bucket_list({'bucket': ['Mickey Mouse', 'Minnie Mouse', 'Fantasmic!', 'Nighttime Fireworks Spectacular', "Tiana's Bayou Adventure", "Mickey and Minnie's Runaway Railway", 'Pirates of the Caribbean', 'Space Mountain', 'Indiana Jones Adventure: Temple of the Forbidden Eye', 'Big Thunder Mountain Railroad', 'Star Tours: The Adventures Continue', 'Star Wars: Millennium Falcon: Smugglers Run', 'Star Wars: Rise of the Resistance', 'Matterhorn Bobsleds', "Peter Pan's Flight", "It's a Small World", 'The Haunted Mansion'], 'filename': 'Gruyere_Disneyland_Day_Bucket_List.txt'}) -> None
+run_agent. DEBU 09:08:05 AGENT bucket_list_creator
+run_agent. DEBU 09:08:12 RESPONSE from bucket_list_creator in 7.27 seconds
+tools.py   DEBU 09:08:12 TOOL bucket_list_creator called conclude({})
+tools.py   DEBU 09:08:12 TOOL bucket_list_creator called conclude({}) -> None
+tools.py   DEBU 09:08:12 TOOL main called bucket_list_creator({'input': 'Username: Gruyere'}) -> None
+run_agent. DEBU 09:08:12 AGENT main
+run_agent. DEBU 09:08:47 RESPONSE from main in 34.52 seconds
+run_agent. DEBU 09:09:40 AGENT main
+run_agent. DEBU 09:09:52 RESPONSE from main in 12.14 seconds
+tools.py   DEBU 09:09:52 TOOL main called get_user({'username': 'Username: Gruyere'})
+tools.py   DEBU 09:09:52 TOOL main called get_user({'username': 'Username: Gruyere'}) -> {'visit_planned': 'Spring Break', 'days_in_disneyland': '1', 'days_in_c_adventure': '0', 'hours_per_day': 'All day', 'bucket_list_file_name': 'Username: Gruyere_bucket_list.txt', 'food_suggestions_file_name': 'Username: Gruyere_food.txt'}
+run_agent. DEBU 09:09:52 AGENT main
+run_agent. DEBU 09:09:56 RESPONSE from main in 4.09 seconds
+tools.py   DEBU 09:09:56 TOOL main called ride_planner({'input': 'Username: Gruyere'})
+run_agent. DEBU 09:09:56 AGENT ride_planner
+run_agent. DEBU 09:10:08 RESPONSE from ride_planner in 12.29 seconds
+tools.py   DEBU 09:10:08 TOOL ride_planner called get_user({'username': 'Gruyere'})
+tools.py   DEBU 09:10:08 TOOL ride_planner called get_user({'username': 'Gruyere'}) -> Gruyere not found
+run_agent. DEBU 09:10:08 AGENT ride_planner
+run_agent. DEBU 09:10:17 RESPONSE from ride_planner in 8.80 seconds
+tools.py   DEBU 09:10:17 TOOL ride_planner called talk_to_user({'message': "I looked up the user profile, but I couldn't find any memory for username 'Gruyere'. To proceed, please provide one of the following:\n- a different valid username, or\n- confirm you'd like to create a new memory and bucket list from scratch, and provide:\n  - bucket list items (names of rides, shows, or characters) as a list,\n  - a filename to save your bucket list (e.g., my_bucket_list.txt),\n  - your park (Disneyland Park or Disney California Adventure),\n  - start hour and end hour (military time),\n  - expected crowd level (1-5, where 3 is normal).\n\nOnce I have that, I will generate your schedule and walk you through any adjustments."})

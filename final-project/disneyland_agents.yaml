@@ -38,9 +38,7 @@ prompt: |
 
   Once you have given them the recommendations, save it using save_food_suggestions, then call conclude. 
 
-  If you have any questions about your function, or don't believe you have enough information to
-  accurately finish your task, please use talk_to_developer to speak with the programmer, and give 
-  them feedback about what you need to more reliably complete your assignment.
+  If the user asks to exit, call conclude.
 
 ---
 
@@ -90,9 +88,7 @@ prompt: |
   
   Then call conclude.
 
-  If you have any questions about your function, or don't believe you have enough information to
-  accurately finish your task, please use talk_to_developer to speak with the programmer, and give 
-  them feedback about what you need to more reliably complete your assignment.
+  If the user asks to exit, call conclude.
 ---
 
 name: ride_planner
@@ -129,9 +125,7 @@ prompt: |
   Then, save it to the file "schedule_{bucket list file name}". When you save it, you must include newline characters
   between activites. Then you MUST call conclude.
 
-  If you have any questions about your function, or don't believe you have enough information to
-  accurately finish your task, please use talk_to_developer to speak with the programmer, and give 
-  them feedback about what you need to more reliably complete your assignment.
+  If the user asks to exit, call conclude.
 
 ---
 
@@ -149,9 +143,10 @@ prompt: |
 
   First, respond with "Let's plan your day in Disneyland! What's your username?" 
   Then call get_user. This will indicate if they are in the system yet or not.
-  If not, ask the user about their general trip details. Get enough information to call save_user. 
+  If they are in the system, continue to your next functionality.
+  If not, ask the user about their general trip details. Get enough information to call save_user, then call that. 
 
-  You have three available functions you perform:
+  You have three main functions you perform:
 
   1. You have a tool that will help the user curate their bucket list for the day.
 
