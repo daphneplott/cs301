@@ -47,3 +47,10 @@ Gruyere:
   hours_per_day: most of the day
   bucket_list_file_name: Gruyere_bucket_list.txt
   food_suggestions_file_name: Gruyere_food.txt
+Boston:
+  visit_planned: May
+  days_in_disneyland: '1'
+  days_in_c_adventure: '0'
+  hours_per_day: all day
+  bucket_list_file_name: Boston_bucket_list.txt
+  food_suggestions_file_name: Boston_food.txt
