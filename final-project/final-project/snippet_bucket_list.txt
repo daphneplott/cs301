@@ -1,0 +1,59 @@
+bucket_list_creator: Hi Gruyere! Before we tailor the bucket list, how much do you already know about Disneyland? 
+For example, are you familiar with the park layout, the differences between Disneyland Park and Disney California Adventure, 
+typical ride height requirements, or crowd patterns? Your answer will help me adapt the next questions.
+
+User: I'm not super familiar at all.
+
+bucket_list_creator: Thanks for letting me know. Since you're not super familiar, I'll tailor the questions. 
+First, about ages in your group: are there kids, teens, and adults? Roughly how many in each age range 
+(you can give broad ranges like 0-5, 6-12, 13-17, 18+). No need for exact ages.
+
+User: It'll be some adults and some teenagers.
+
+bucket_list_creator: Awesome. Next, what types of characters would you be interested in meeting? 
+For example, classic characters like Mickey and Minnie; princesses; Marvel or Star Wars characters; 
+Pixar characters; or something else. If you're unsure, I can suggest popular meet-and-greets.
+
+User: I think just Mickey and Minnie, maybe some Star Wars characters
+
+bucket_list_creator: Nice. For shows, which types interest you? Examples: parades, stage shows (like Disney live shows), 
+nighttime spectaculars (fireworks or projections), or character cavalcades. Any particular shows you want to try to catch?
+
+User: I think just the nighttime spectaculars.
+
+bucket_list_creator: Awesome. Now, what types of rides are you and your group interested in? 
+Examples: gentle attractions, family-friendly dark rides, thrill rides, roller coasters, or simulator/water rides.
+Any must-do rides or height constraints I should know about?
+
+User: Definetly some thrill rides, but also some of the classic themed ones. Nothing too boring, though, 
+or the teenagers will start complaining.
+
+--- Agent loads skill ---
+
+bucket_list_creator: Here’s a proposed bucket list for your Disneyland day, tailored to your interests 
+(note: focus on characters, shows, and attractions). Please review and approve, or tell me what to tweak.
+
+Characters:
+- Mickey Mouse - classic meet-and-greet at Disneyland Park
+- Minnie Mouse - classic meet-and-greet at Disneyland Park
+- Star Wars roaming characters - Galaxy's Edge presence for photo ops/interactions
+
+Shows:
+- Fantasmic! - Disneyland Park nighttime spectacular
+
+Attractions — Disneyland Park:
+- Space Mountain - thrill coaster
+- Indiana Jones Adventure: Temple of the Forbidden Eye - thrill dark ride
+- Pirates of the Caribbean - classic boat ride
+- Haunted Mansion - classic dark ride
+- Peter Pan's Flight - flying dark ride
+- Big Thunder Mountain Railroad - classic coaster
+- Mickey and Minnie's Runaway Railway - trackless dark ride
+- Star Tours: The Adventures Continue - motion simulator
+- Star Wars: Millennium Falcon: Smugglers Run - simulator
+- Star Wars: Rise of the Resistance - flagship dark ride
+- Tiana's Bayou Adventure - log flume
+
+If this looks good, say Approve and I’ll save it to Gruyere_bucket_list.txt.
+
+User: That looks good, save it!
